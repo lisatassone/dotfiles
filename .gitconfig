@@ -1,0 +1,12 @@
+[user]
+	email = ltassone@skedulo.com
+	name = Lisa Tassone
+[alias]
+	branch-delete-merged = "!git branch-list-merged | xargs git branch -d"
+	branch-list-merged = "!git branch --merged dev | grep -v -E '(dev|origin|master)'"
+	a = add
+	ap = add --patch
+	b = branch
+	c = commit
+	co = checkout
+	s = status
