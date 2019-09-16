@@ -4,9 +4,21 @@
 [alias]
 	branch-delete-merged = "!git branch-list-merged | xargs git branch -d"
 	branch-list-merged = "!git branch --merged dev | grep -v -E '(dev|origin|master)'"
+	ignore-untracked = "!git status -s | grep -e '^\\?\\?' | grep -v '.gitignore' | cut -c 4- >> .gitignore"
 	a = add
 	ap = add --patch
 	b = branch
+	bl = branch --list
 	c = commit
 	co = checkout
+	p = push
+	pu = push --set-upstream
 	s = status
+	pf = push --force-with-lease
+	f = fetch
+	nah = reset --hard HEAD
+	r = rebase
+	ri = rebase -i
+[core]
+	excludesfile = /home/lisa/.gitignore_global
+	editor = vim
