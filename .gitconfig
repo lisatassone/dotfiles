@@ -1,5 +1,5 @@
 [user]
-	email = ltassone@skedulo.com
+	email = lisa.tassone@cultureamp.com
 	name = Lisa Tassone
 [alias]
 	branch-delete-merged = "!git branch-list-merged | xargs git branch -d"
@@ -20,5 +20,5 @@
 	r = rebase
 	ri = rebase -i
 [core]
-	excludesfile = /home/lisa/.gitignore_global
+	excludesfile = /home/lisatassone/.gitignore_global
 	editor = vim

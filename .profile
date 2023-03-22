@@ -35,3 +35,5 @@ if [ -d "/opt/gradle" ]; then
     export GRADLE_HOME="/opt/gradle"
     PATH="$PATH:$GRADLE_HOME/bin"
 fi
+
+export HOMEBREW_GITHUB_API_TOKEN=
